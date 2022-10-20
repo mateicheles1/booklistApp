@@ -7,4 +7,4 @@ Future stuff will be added:
 - being able to remove books from the list;
 - being able to mark books as watched which will place them in a different category/list;
 - being able to log into the app using fictional usernames and passwords due to the lack of backend dev;
-- further design improvements;
+- further UI improvements;
