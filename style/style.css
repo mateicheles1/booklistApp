@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to top left, #DAF3FF,#5D6570 );
+}
+
+.container {
+    padding: 2rem;
+    border-radius: 15px;
+    background: #5D6570;
+    box-shadow: 5px 5px 10px #5D6570;
+}
+
+.display-4 {
+    color: #2F3640;
+    font-weight: 300;
+}
+
+.form-group {
+    margin-bottom: .5rem;
+}
+
+.btn {
+    width: 100%;
+}
+
+td {
+    width: 50%;
+}
+
+#first,
+#second {
+    font-style: italic;
+}
