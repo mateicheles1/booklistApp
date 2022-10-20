@@ -12,12 +12,10 @@ export class BookList {
     printList() {
         const row = this.createRow();
         this.parentComponent.appendChild(row);
-        console.log(row);
-        console.log(this.parentComponent);
         authorInput.value = '';
         titleInput.value = '';
     }
-
+    
     createRow() {
         const row = document.createElement('tr');
         row.classList.add('table--row');
