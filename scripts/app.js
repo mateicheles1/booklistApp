@@ -1,14 +1,20 @@
 import {bookList} from "./variables/variables.js";
 import {button} from "./variables/variables.js";
 import {BookList} from "./components/BookList.js"
-import {prepend} from './variables/variables.js';
+import {table} from "./variables/variables.js"
 
-// prepend.innerHTML = 'Both fields required!';
+const list = new BookList(bookList);
+
+button.addEventListener('click', addElements);
+table.addEventListener('click', removeElements);
 
 function addElements(e) {
     e.preventDefault();
-    const list = new BookList(bookList);
     list.printList();
+    list.saveLocalStorage();
 }
 
-button.addEventListener('click', addElements);
+function removeElements(e) {
+    list.removeRow(e);
+}
+
