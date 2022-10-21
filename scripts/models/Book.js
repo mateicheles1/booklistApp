@@ -7,7 +7,7 @@ export class Book {
     createData() {
         const el = document.createElement('td');
         el.classList.add('title--data');
-        el.textContent = this.title;
+        el.textContent = this.title.value;
         return el;
     }
 }

@@ -7,7 +7,7 @@ export class Author {
     createData() {
         const el = document.createElement('td');
         el.classList.add('author--data');
-        el.textContent = this.name;
+        el.textContent = this.name.value;
         return el;
     }
 }
