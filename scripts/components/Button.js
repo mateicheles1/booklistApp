@@ -5,13 +5,13 @@ export class Button {
     createTableData() {
         const data = document.createElement('td');
         data.classList.add('btn--data');
-        const button = this.createButton();
+        const button = this.createRemoveButton();
         data.appendChild(button);
         return data;
 
     }
 
-    createButton() {
+    createRemoveButton() {
        const el =  document.createElement('button');
        el.classList.add('remove--button');
        el.textContent = 'X';

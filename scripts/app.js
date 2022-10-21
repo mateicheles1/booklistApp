@@ -1,7 +1,8 @@
-import {bookList} from "./variables/variables.js";
+import {authorInput, bookList, titleInput} from "./variables/variables.js";
 import {button} from "./variables/variables.js";
 import {BookList} from "./components/BookList.js"
 import {table} from "./variables/variables.js"
+import {Book} from "./models/Book.js"
 
 const list = new BookList(bookList);
 
@@ -11,7 +12,6 @@ table.addEventListener('click', removeElements);
 function addElements(e) {
     e.preventDefault();
     list.printList();
-    list.saveLocalStorage();
 }
 
 function removeElements(e) {
