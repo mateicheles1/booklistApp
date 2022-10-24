@@ -12,9 +12,9 @@ export class Button {
     }
 
     createRemoveButton() {
-       const el =  document.createElement('button');
+       const el =  document.createElement('img');
        el.classList.add('remove--button');
-       el.textContent = 'X';
+       el.src = '../images/icons8-delete.svg'
        return el;
     }
 }
