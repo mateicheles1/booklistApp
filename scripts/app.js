@@ -1,8 +1,5 @@
-import { authorInput, bookList, titleInput, prepend } from "./variables/variables.js";
-import { button } from "./variables/variables.js";
+import { authorInput, bookList, titleInput, prepend, table, button } from "./variables/variables.js";
 import { BookList } from "./components/BookList.js"
-import { table } from "./variables/variables.js"
-import { Book } from "./models/Book.js"
 
 const list = new BookList(bookList);
 prepend.style.display = 'none';
