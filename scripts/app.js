@@ -17,8 +17,6 @@ function removeElements(e) {
     list.removeRow(e);
 }
 
-localStorage.clear();
-
 function notice() {
     if(authorInput.value && titleInput.value) return;
     if(authorInput.value) {
