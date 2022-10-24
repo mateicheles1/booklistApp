@@ -28,6 +28,7 @@ export class BookList {
         row.appendChild(this.getTitle());
         row.appendChild(this.getAuthor());
         row.appendChild(this.getRemoveButton());
+        // row.appendChild(this.getFavBtn());
         return row;
     }
 
@@ -46,6 +47,12 @@ export class BookList {
     getRemoveButton() {
         const el = new Button();
         const button = el.createTableData();
+        return button;
+    }
+
+    getFavBtn() {
+        const el = new Button();
+        const button = el.createFavouriteButton();
         return button;
     }
 

@@ -17,4 +17,11 @@ export class Button {
        el.src = '../images/icons8-delete.svg'
        return el;
     }
+
+    createFavouriteButton() {
+        const el = document.createElement('img');
+        el.classList.add('favourite--button');
+        el.src = '../images/icons8-star-30.png';
+        return el;
+    }
 }

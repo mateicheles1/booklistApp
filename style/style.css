@@ -11,6 +11,7 @@ body {
     border-radius: 15px;
     background: #5D6570;
     box-shadow: 5px 5px 10px #5D6570;
+    font-size: 1.2rem;
 }
 
 .display-4 {
@@ -44,11 +45,9 @@ td {
 
 .remove--button:hover {
     animation: buttonAnimation 2s linear infinite;
-    color: whitesmoke;
 }
 
-.remove--button:active {
-    background-color: #c0392b;
+.prepend {
 }
 
 
