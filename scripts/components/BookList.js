@@ -4,6 +4,7 @@ import {titleInput} from "../variables/variables.js";
 import {Button} from "../components/Button.js";
 // import {form} from "../variables/variables.js";
 export class BookList {
+    books = [];
 
     constructor(parentComponent) {
         this.parentComponent = parentComponent;
@@ -12,6 +13,10 @@ export class BookList {
     printList() {
         if(!authorInput.value || !titleInput.value) return;
         const row = this.createRow();
+        this.books.push(this.getTitle().textContent);
+        this.books.push(this.getAuthor().textContent);
+        console.log(this.books);
+        this.dataToLocalStorage();
         this.parentComponent.appendChild(row);
         authorInput.value = '';
         titleInput.value = '';
@@ -44,12 +49,19 @@ export class BookList {
         return button;
     }
 
-    removeRow(el) {
-        if(!el.target.classList.contains('remove--button')) return;
-        el.target.closest('.table--row').remove();
+    removeRow(e) {
+        if(!e.target.classList.contains('remove--button')) return;
+        e.target.closest('.table--row').remove();
     }
 
-    dataToLocalStorage(obj) {
-       localStorage.setItem('book', JSON.stringify(obj));
+    dataToLocalStorage() {
+        localStorage.setItem('book', JSON.stringify(this.books));
     }
+
+    dataFromLocalStorage() {
+        const data = JSON.parse(localStorage.getItem('book'));
+        console.log(data);
+    }
+
+
 }
