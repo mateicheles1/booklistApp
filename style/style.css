@@ -15,7 +15,6 @@ img {
     border-radius: 15px;
     background: #5D6570;
     box-shadow: 5px 5px 10px #5D6570;
-    font-size: 1.2rem;
 }
 
 .display-4 {
@@ -32,6 +31,7 @@ img {
 }
 
 td {
+    font-size: 1.2rem;
     width: 50%;
 }
 
@@ -45,6 +45,7 @@ td {
     border: none;
     border-radius: 5px;
     transition: 300ms;
+    height: 2rem;
 }
 
 .remove--button:hover {
@@ -70,7 +71,6 @@ td {
 
 @media screen and (max-width: 768px) {
     .container {
-        height: 60vh;
         font-size: 1.6rem;
     }
 
@@ -82,11 +82,23 @@ td {
         font-size: 5rem;
     }
 
+    img {
+        width: 6rem;
+        height: 6rem;
+    }
+
     input::placeholder,
     input[type="text"] {
         font-size: 1.4rem;
     }
 
+    input[type="text"] {
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        height: 6vh;
+    }
 }
 
 
